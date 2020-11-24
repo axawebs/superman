@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>ResMan V1.0</title>
+        <!-- Common Styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+
+        <!-- Component Specific Styles -->
+        <link rel="stylesheet" href="components/images/styles.css" />
+        
+        <!-- Plugin Styles-->
+        <link rel="stylesheet" href="assets/plugins/select2/select2.css" />
+        <link rel="stylesheet" href="assets/plugins/bootstrap_toggle/bootstrap-toggle.min.css" />
+        <link rel="stylesheet" href="assets/plugins/font_awesome/css/font-awesome.min.css" />
+
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="app_header" class="section">
+                <div class="container-fluid">
+                    <div id="super_head">
+                        <div class="row">
+                            <div class="col-sm-12 text-center cmp_nav" id="app_header_nav">
+                                <button type="button" class="btn btn-underline" cmp_target='images'>Images</button>
+                                <button type="button" class="btn btn-light" cmp_target='regular_menu'>Regular Menu</button>
+                                <button type="button" class="btn btn-light" cmp_target='create_offer'>Create Offer</button>
+                                <button type="button" class="btn btn-light" cmp_target='active_offers'>Active Offers</button>
+                                <button type="button" class="btn btn-light" cmp_target='uon'>UON</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Load Header For Component (load_component())-->
+            <div id="app_sub_header"></div>
+            </div>
+            <!-- Load Body For Component (load_component())-->
+            <div id="app_body">
+            </div>
+            <div class="app_footer"></div>
+        </div>
+
+        <!-- Common Scripts -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/components.js"></script>
+        <script type="text/javascript" src="assets/js/module.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+        <!-- Plugin scripts-->
+        <script type="text/javascript" src="assets/plugins/select2/select2.full.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap_toggle/bootstrap-toggle.min.js"></script>
+    </body>
+</html>

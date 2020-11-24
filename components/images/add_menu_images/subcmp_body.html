@@ -1,0 +1,210 @@
+<div class="container" id="add_menu_images">
+  <h4>Reg Menu Images</h4>
+  <div class="row">
+    <div class="col-sm-6">
+      <form>
+        <div class="form-group row">
+          <label for="reg-menu-category" class="col-sm-3">Reg Menu Category</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="reg-menu-category">
+              <option disabled selected>Reg Menu Category</option>
+              <option>Breakfast</option>
+              <option>Day Menu</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="image-for" class="col-sm-3">Image For</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="image-for">
+              <option disabled selected>Image For</option>
+              <option>Mobile</option>
+              <option>Desktop</option>
+              <option>Tablet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="file-name" class="col-sm-3">File Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="file-name" placeholder="File Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="sub-category" class="col-sm-3">File Upload</label>
+          <div class="col-sm-9">
+            <div id="file-upload-form" class="form group uploader">
+              <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+              <label for="file-upload" id="file-drag">
+                <img id="file-image" src="#" alt="Preview" class="hidden">
+                <div id="start">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  <div>Select a file or drag here</div>
+                  <div id="notimage" class="hidden">Please select an image</div>
+                  <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                </div>
+                <div id="response" class="hidden">
+                  <div id="messages"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="image-id" class="col-sm-3">Image Id</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="image-id" placeholder="Image Id">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="additions" class="col-sm-3">Additions (Tomato Sauce)</label>
+          <div class="col-sm-9">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="free" name="additions" class="custom-control-input">
+              <label class="custom-control-label" for="free">Free</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="paid" name="additions" class="custom-control-input">
+              <label class="custom-control-label" for="paid">Paid</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="file-size" class="col-sm-3">File Size</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="file-size" placeholder="File Size">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="file-description" class="col-sm-3">File Description</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="file-description" placeholder="File Description">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="ingredients" class="col-sm-3">Ingredients</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="ingredients" maxlength="250"
+              placeholder="Max Length 250 Char">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="allergens" class="col-sm-3">Allergens</label>
+          <div class="col-sm-9">
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="1" class="custom-control-input">
+              <label class="custom-control-label" for="1">1</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="2" class="custom-control-input">
+              <label class="custom-control-label" for="2">2</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="3" class="custom-control-input">
+              <label class="custom-control-label" for="3">3</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="4" class="custom-control-input">
+              <label class="custom-control-label" for="4">4</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="5" class="custom-control-input">
+              <label class="custom-control-label" for="5">5</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="6" class="custom-control-input">
+              <label class="custom-control-label" for="6">6</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="7" class="custom-control-input">
+              <label class="custom-control-label" for="7">7</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="8" class="custom-control-input">
+              <label class="custom-control-label" for="8">8</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="9" class="custom-control-input">
+              <label class="custom-control-label" for="9">9</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="10" class="custom-control-input">
+              <label class="custom-control-label" for="10">10</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="11" class="custom-control-input">
+              <label class="custom-control-label" for="11">11</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="12" class="custom-control-input">
+              <label class="custom-control-label" for="12">12</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="13" class="custom-control-input">
+              <label class="custom-control-label" for="13">13</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="14" class="custom-control-input">
+              <label class="custom-control-label" for="14">14</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="15" class="custom-control-input">
+              <label class="custom-control-label" for="15">15</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="16" class="custom-control-input">
+              <label class="custom-control-label" for="16">16</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="17" class="custom-control-input">
+              <label class="custom-control-label" for="17">17</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="18" class="custom-control-input">
+              <label class="custom-control-label" for="18">18</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="19" class="custom-control-input">
+              <label class="custom-control-label" for="19">19</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" id="20" class="custom-control-input">
+              <label class="custom-control-label" for="20">20</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="upload-date" class="col-sm-3 col-form-label">Upload Date</label>
+          <div class="col-sm-9">
+            <div class="input-group">
+              <input type="text" class="datepicker form-control" id="upload-date" placeholder="Start Date & Time">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="calories" class="col-sm-3">Calories</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="calories" placeholder="Calories">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-right">
+            <button type="submit" class="btn btn-success">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
