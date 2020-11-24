@@ -111,5 +111,128 @@
 }
 
 #add_category .select2{
-    width: 100% !important;
+    width: 100% !important; 
 }
+
+.delete_category{
+    background-color: red;
+    padding: 6px 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.delete_category:hover{
+    background-color: darkred;
+}
+ul#suggest_items{
+    list-style: none;
+    height: 300px;
+    border: solid 1px #eee;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 0 0 0 !important;
+}
+ul#suggest_items li{
+    display: inline-block;
+    width: 100%;
+    margin: 2px;
+}
+ul#suggest_items li div{
+    float: left;
+}
+ul#suggest_items li .select_suggest{
+    width:80%;
+    margin-right:5px;
+    padding: 5px;
+    padding-left:10px;
+    border-radius: 4px;
+}
+ul#suggest_items li .select_suggest a{
+    color:teal !important;
+    pointer-events: none;
+}
+ul#suggest_items li .select_suggest:hover{
+    background-color:#eee;
+}
+
+/*
+    Add Menu Images
+*/
+
+#add_menu_images{
+    margin-bottom:150px;
+}
+
+#addmenuimages_title{
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+    .tab-pane{
+        padding: 10px;
+        border: solid 1px #eee;
+        border-radius: 5px;
+        background-color: #eee;
+    }
+
+.station_selection td,.station_selection th{
+    padding: 2px;
+    margin: 4px;
+    text-align: center;
+}
+    .station_selection div{
+        padding: 4px;
+        background-color: #eee;
+        width: 40px;
+        border-radius: 4px;
+        transition: all .1s;
+    }
+    .station_selection td div:hover{
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    .station_selection .td1 .selected{
+        background-color: rebeccapurple;
+        color: #fff;
+    }
+
+    .station_selection .td2 .selected{
+        background-color: olivedrab;
+        color: #fff;
+    }
+
+    .station_selection .td3 .selected{
+        background-color: royalblue;
+        color: #fff;
+    }
+    .station_selection .td4 .selected{
+        background-color: teal;
+        color: #fff;
+    }
+    .station_selection .td5 .selected{
+        background-color: #444;
+        color: #fff;
+    }
+
+    .station_selection .td6 .selected{
+        background-color: darkorchid;
+        color: #fff;
+    }
+
+    .station_selection .td7 .selected{
+        background-color: darkgreen;
+        color: #fff;
+    }
+
+    .station_selection .td8 .selected{
+        background-color: darkred;
+        color: #fff;
+    }
+    #editmode_active{
+        color: red !important;
+    }
+   

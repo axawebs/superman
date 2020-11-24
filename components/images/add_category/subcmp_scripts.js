@@ -11,7 +11,7 @@ function load_suggestions(suggest_title, suggestions){
     $('#suggest_items').html('');
     
     $(suggestions).each(function(item,value){
-        const html = '<li><a href="javascript:void(0);">'+value+'</a></li>';
+        const html = '<li class="suggestions"><div class="select_suggest"><a href="javascript:void(0);">'+value+'</a></div><div class="delete_suggest"> <span class="delete_category"><i class="fa fa-trash-o"></i></span></div></li>';
         $('#suggest_items').append(html);
     });
 }
