@@ -1,0 +1,17 @@
+/*
+    Regular Menu Common CSS
+*/
+#regularmenu_primaryselection button{
+    border: solid 1px #ccc;
+}
+
+#regularmenu_secondaryselection{
+    margin-top: 25px;
+}
+#regularmenu_secondaryselection button{
+    border: solid 1px #ccc;
+}
+
+#regular_menu .daymenu_subcat{
+    display: none;
+}

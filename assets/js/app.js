@@ -18,8 +18,7 @@ function ui_related_functions() {
  * Default settings for app open screen
  */
 function default_loads() {
-    load_component('images');
-    load_sub_component('images','regular_menu');
+    load_component('regular_menu');
 }
 
 /**

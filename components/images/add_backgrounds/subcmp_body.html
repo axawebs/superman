@@ -1,0 +1,111 @@
+<div class="container" id="add_menu_images">
+  <h4 id="addmenuimages_title">Offer Backgrounds</h4>
+  <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group row">
+          <label for="reg-menu-category" class="col-sm-3">Offer</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="offer-menu-category">
+              <option>Daily Offer</option>
+              <option>Just 4 Today</option>
+              <option>3Hr Offer</option>
+            </select>
+          </div>
+        </div>
+      <!-- Tabs Start here-->  
+      <p>Upload images for:</p>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Mobile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tablet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Desktop</a>
+        </li>
+      </ul><!-- Tab panes -->
+      
+      <div class="tab-content">
+        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+          <div class="form-group row">
+            <label for="file-name" class="col-sm-3">File Name</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="file-name" placeholder="File Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="sub-category" class="col-sm-3">File Upload</label>
+            <div class="col-sm-9">
+              <div id="file-upload-form" class="form group uploader">
+                <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+  
+                <label for="file-upload" id="file-drag">
+                  <img id="file-image" src="#" alt="Preview" class="hidden">
+                  <div id="start">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <div>Select a file or drag here</div>
+                    <div id="notimage" class="hidden">Please select an image</div>
+                    <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                  </div>
+                  <div id="response" class="hidden">
+                    <div id="messages"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image-id" class="col-sm-3">Image Id</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="SonyCam-12232.jpg" disabled>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="file-size" class="col-sm-3">File Size</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="file-size" placeholder="File Size" value="0.0 Mb" disabled>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="file-description" class="col-sm-3">File Upload Date</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="file-description" placeholder="File Description" disabled value="12/11/2020">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="file-description" class="col-sm-3">File Desc.</label>
+            <div class="col-sm-9">
+              <textarea type="text" class="form-control" style="resize:none; overflow:hidden" height="30" id="file-description" placeholder="File Description"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tabs-2" role="tabpanel">
+          <p>Second Panel</p>
+        </div>
+        <div class="tab-pane" id="tabs-3" role="tabpanel">
+          <p>Third Panel</p>
+        </div>
+      </div>
+
+      </div><!-- / Col sm 6-->
+      <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8"></div>
+    <div class="col-sm-4 text-right">
+      <button type="submit" class="btn btn-warning">Clear</button>
+      <button type="submit" class="btn btn-success">Save</button>
+    </div>
+  </div>
+</div>
