@@ -1,6 +1,10 @@
 /*
     Regular Menu Common CSS
 */
+
+#regularmenu_regmenu{
+    padding-bottom:200px;
+}
 #regularmenu_primaryselection button{
     border: solid 1px #ccc;
 }
@@ -13,5 +17,83 @@
 }
 
 #regular_menu .daymenu_subcat{
+    display: none;
+}
+
+/* Add to table*/
+#regmenu_addtotable_container{
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#additions_inputgroup .select2{
+    width:100% !important;
+}
+#additions_inputgroup .select2-selection{
+    border:solid 2px #ccc;
+}
+
+.float-left{
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    margin:.5%;
+}
+
+#additions_inputgroup .select2-results__option[aria-selected=true] {
+    display: none;
+}
+
+.desctooltip_container{
+    width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 2px #666;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.desctooltip_title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 14pt;
+    padding: 10px;
+}
+.desctooltip_close{
+   position: absolute;
+   right:8px;
+   top:0px;
+   font-size: 20pt;
+   transition: all .1s;
+   cursor: pointer;
+}
+.desctooltip_close:hover{
+    color:red
+}
+.desctooltip_saveddescs{
+    list-style: none;
+    padding: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.desctooltip_saveddescs li{
+    padding: 5px;
+    background-color: #eee ;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.desctooltip_saveddescs li:hover{
+    background-color: #444;
+    color:#fff;
+}
+
+/*
+    Additions Menu
+*/
+
+.additions_class.free_item .addrow_price *{
     display: none;
 }

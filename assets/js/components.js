@@ -58,10 +58,10 @@ function load_sub_component(parent_component, sub_component_name){
  * 
  * Appending JS to html head
  */
-function load_js(filename){
+function load_js(file_url){
     let fileref=document.createElement('script');
     fileref.setAttribute("type","text/javascript");
-    fileref.setAttribute("src", filename);
+    fileref.setAttribute("src", file_url);
     if (typeof fileref!="undefined"){
       document.getElementsByTagName("head")[0].appendChild(fileref);
     }
@@ -69,19 +69,40 @@ function load_js(filename){
 
 /**
  * 
- * Components from app
+ * Remove Any JS by file name or url
+ */
+function remove_js(file_search_term) {
+  let allsuspects=document.getElementsByTagName("script");
+
+  for (let i=allsuspects.length; i>=0; i--){
+     //search backwards within nodelist for matching elements to remove
+    if (allsuspects[i] && allsuspects[i].getAttribute("src")!=null && allsuspects[i].getAttribute("src").indexOf(file_search_term)!=-1 ){
+        allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+    }
+  }
+}
+
+
+/**
+ * 
+ * Remove Components JS from app
  */
 
 function remove_cmp_js(){
-    let allsuspects=document.getElementsByTagName("script");
+  let allsuspects=document.getElementsByTagName("script");
 
-    for (let i=allsuspects.length; i>=0; i--){
+  for (let i=allsuspects.length; i>=0; i--){
      //search backwards within nodelist for matching elements to remove
     if (allsuspects[i] && allsuspects[i].getAttribute("src")!=null && (allsuspects[i].getAttribute("src").indexOf('cmp_scripts.js')!=-1 || allsuspects[i].getAttribute("src").indexOf('cmp_common_scripts.js')!=-1)){
         allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
     }
- }
+  }
 }
+
+/**
+ * 
+ * Remove Sub Components JS  from app
+ */
 
 function remove_subcmp_js(){
   let allsuspects=document.getElementsByTagName("script");

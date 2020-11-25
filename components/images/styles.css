@@ -162,6 +162,7 @@ ul#suggest_items li .select_suggest:hover{
     Add Menu Images
 */
 
+
 #add_menu_images{
     margin-bottom:150px;
 }
@@ -177,6 +178,18 @@ ul#suggest_items li .select_suggest:hover{
         border-radius: 5px;
         background-color: #eee;
     }
+
+/*
+    Additions
+*/    
+#add_additions{
+    padding: 10px;
+    border: solid 2px #eee;
+    border-radius: 5px;;
+}
+#addadditions_title{
+    margin-top: 20px;;
+}
 
 .station_selection td,.station_selection th{
     padding: 2px;
@@ -236,3 +249,86 @@ ul#suggest_items li .select_suggest:hover{
         color: red !important;
     }
    
+
+    /*
+        Add Category
+    */
+    .additions_class{
+        border-bottom: solid 2px #eee;
+        border-top: solid 2px #eee;
+        padding: 10px 0px;
+    }
+    .additions_class .btn-success{
+        display: none;
+    }
+    
+    .additions_class input, .additions_class .squaredThree label{
+        background-color: #eee;
+        pointer-events: none;
+    }
+
+    .addition_editable{
+        background-color: #fee;
+    }
+    .addition_editable input, .addition_editable .squaredThree label{
+        background-color: #fff;
+        pointer-events: auto;
+    }
+    .addition_editable .btn-success{
+        display: inline-block;
+    }
+    .addition_editable .btn-warning{
+        display: none;
+    }
+
+    /* .squaredThree */
+ .squaredThree {
+     position: relative;
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+}
+.squaredThree label {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#fff;
+    border-radius: 4px;
+    border:solid 2px #ccc;
+}
+.squaredThree label:after {
+    content: "";
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border: 3px solid #000;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+.squaredThree label:hover::after {
+    opacity: 0.3;
+}
+.squaredThree input[type="checkbox"] {
+    visibility: hidden;
+}
+.squaredThree>input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+input[type=checkbox] {
+    box-sizing: border-box;
+}
+
+.addrow_price input,.addrow_price label{
+    display: inline-block;
+}
+.addrow_price input{
+    width: 90px;
+}

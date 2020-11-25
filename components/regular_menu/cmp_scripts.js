@@ -18,4 +18,4 @@
         .addClass('btn-secondary'); 
  });
 
- load_sub_component('regular_menu','reg_menu');
+ load_sub_component('regular_menu','additions');
