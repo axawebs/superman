@@ -1,0 +1,133 @@
+<div class="collapse" id="menu-add-images">
+  <div class="card card-body" style="border: none;">
+    <!-- Cart-->
+    <div class="container text-center" style="padding: 20px;">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 slider-container" style="overflow: hidden; padding:35px 0px; border:solid 2px #ccc; border-radius:5px;">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                <img class="img-fluid" src="assets/img/slider/200x100-4.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-1.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-2.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-3.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-3.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-4.jpg" alt="">
+                <img  class="img-fluid" src="assets/img/slider/200x100-1.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-2.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-3.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-4.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-1.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-2.jpg" alt="">
+                <img class="img-fluid" src="assets/img/slider/200x100-3.jpg" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+    <!-- / Card -->
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-left" id="menu_add_row">
+      <button type="button" id="btn_createinrow_item" class="btn btn-secondary">
+        Items
+        <i class="fa fa-plus"></i>
+      </button>
+
+      <button type="button" id="btn_addtorow_image" data-toggle="collapse" data-target="#menu-add-images" aria-expanded="false" aria-controls="menu-add-collapse" class="btn btn-secondary">
+        Images
+        <i class="fa fa-plus"></i>
+      </button>
+
+      <button type="button" id="btn_addtorow_additions" class="btn btn-secondary" data-toggle="modal" data-target="#modal_additions_content">
+        Additions
+        <i class="fa fa-plus"></i>
+      </button>
+
+      <button type="button" id="btn_addtorow_additions" class="btn btn-secondary" data-toggle="modal" data-target="#modal_descriptions_content">
+        Descriptions
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Modal Additions-->
+<div class="modal fade" id="modal_additions_content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Select Additions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body row" style="widows: 800px;">
+        <div id="modal_additions">
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Modal Additions-->
+ <div class="modal fade" id="modal_descriptions_content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Select Description</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body row" style="">
+        <div class="desctooltip_container">
+          <div class="desctooltip_title">Add from Description Templates</div>
+          <ul class="desctooltip_saveddescs">
+              <li>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Curabitur sed ornare neque. Pellentesque finibus felis et nulla euismod, 
+                  ac scelerisque neque egestas. </p>
+              </li>
+      
+              <li>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Curabitur sed ornare neque. Pellentesque finibus felis et nulla euismod, 
+                  ac scelerisque neque egestas. </p>
+              </li>
+      
+              <li>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Curabitur sed ornare neque. Pellentesque finibus felis et nulla euismod, 
+                  ac scelerisque neque egestas. </p>
+              </li>
+      
+              <li>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Curabitur sed ornare neque. Pellentesque finibus felis et nulla euismod, 
+                  ac scelerisque neque egestas. </p>
+              </li>
+          </ul>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

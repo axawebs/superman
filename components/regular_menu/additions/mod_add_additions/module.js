@@ -1,3 +1,4 @@
+
 function reset_additions_row_btnevents() {
 
     $('.additions_class .btn-warning').unbind('click');
@@ -62,4 +63,12 @@ $('#btn_add_additions').click(function(){
   <!--- /row -->`
     $('#addition_rows').prepend(addition_row_template);
     reset_additions_row_btnevents();
+});
+
+
+/**
+ *  Modal JS
+ */
+$('#modal_additions .additions_class').click(function () {
+  $(this).toggleClass('selected_addition');  
 });

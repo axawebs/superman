@@ -9,15 +9,19 @@
     border: solid 1px #ccc;
 }
 
-#regularmenu_secondaryselection{
-    margin-top: 25px;
-}
 #regularmenu_secondaryselection button{
     border: solid 1px #ccc;
 }
 
-#regular_menu .daymenu_subcat{
-    display: none;
+.subcmp_nav{
+    margin-top: 25px;
+}
+
+#additions_a{
+    padding-bottom: 10px;
+}
+.additions_label{
+    padding-bottom:12px;
 }
 
 /* Add to table*/
@@ -49,8 +53,6 @@
     width: 600px;
     padding: 10px;
     background-color: #fff;
-    box-shadow: 0px 0px 5px 2px #666;
-    margin-top: 5px;
     border-radius: 5px;
 }
 .desctooltip_title{
@@ -89,6 +91,153 @@
     background-color: #444;
     color:#fff;
 }
+
+#modal_additions_content #btn_add_additions{
+    display: none;
+}
+#modal_additions_content .additions_class .addrow_free,
+#modal_additions_content .additions_class .addrow_paid,
+    #modal_additions_content .additions_class .addrow_buttons,
+#modal_additions_content .additions_class .addrow_price,
+#modal_additions #add_additions> .row > .col-sm-2,
+#modal_additions #add_additions> .row > .col-sm-1
+{
+    display: none;
+}
+#modal_additions .additions_class>div{
+    width: 0% !important;
+}
+#modal_additions, #modal_additions, 
+#modal_additions #add_additions #addition_rows
+{
+    width:100% !important;
+}
+#modal_additions .additions_class .col-sm-5{
+    min-width:500px
+}
+#modal_additions .additions_class{
+    padding: 0;
+    border: none !important;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+#modal_additions #add_additions{
+    padding: 0 10px !important;
+    border: none !important;
+}
+#modal_additions .additions_class:hover .col-sm-5 input{
+    background-color: #000;
+    color: #fff;
+}
+#modal_additions .additions_class.selected_addition .col-sm-5 input{
+    background-color: #444;
+    color: #fff;
+}
+
+.slider-container .carousel-item{
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+#addtotable_addrow{
+    margin-bottom: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 20px;
+    background-color: #eee;
+}
+
+/*
+    Slider
+*/
+.slick-arrow{    
+    position: absolute;
+    bottom: -35px;
+    width: 100px;
+    z-index: 9999;
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
+    transition: all .3s;
+}
+.slick-list{
+    overflow: visible !important;
+}
+.slider-container{
+    overflow: hidden;
+    padding: 0 5px;
+    border: solid 2px #ccc;
+}
+.slick-arrow:hover{
+    transform: scale(1.15);
+}
+.slick-arrow:hover:after,.slick-arrow:hover:before{
+    color: #000;
+}
+.slick-prev{
+    right: 35%;
+}
+.slick-next{
+    left: 35%;
+}
+.slick-arrow:focus{
+    outline: none;
+}
+.slick-prev:after{
+    content: '\f054';
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: #999;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+}
+.slick-next:before{
+    content: '\f053';
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: #999;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+}
+.slick-center{
+    transition: all .4s;
+    transform: scale(1.8);
+    box-shadow: 0px 0px 20px 10px #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: solid 1px #ccc;
+}
+
+.slick-center:hover{
+    outline: solid 3px #666;
+    box-shadow: 0px 0px 80px 50px #fff;
+}
+.slick-slide{
+    pointer-events: none;
+}
+.slick-slide.slick-center{
+    pointer-events: auto;
+}
+
+
+#menu_add_row button{
+    width: auto;
+    margin: 2px;
+}
+
+
+
 
 /*
     Additions Menu

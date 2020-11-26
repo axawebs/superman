@@ -1,1 +1,1 @@
-load_module('mod_additions_placeholser','images/add_additions/mod_add_additions');
+load_module('mod_additions_placeholder','images/add_additions/mod_add_additions');

@@ -21,6 +21,16 @@ $('.appbody_nav button').click(function(e) {
     }
 });
 
+
+$('.subcmp_nav button').click(function () {
+    $('.subcmp_nav button').removeClass('btn-primary');
+    $('.subcmp_nav button').addClass('btn-light');
+    $(this)
+        .removeClass('btn-light')
+        .addClass('btn-primary');
+ });
+ 
+
 /**
  *  Select 2 plugin
  *  all general selects are formatted with select 2 plugin
