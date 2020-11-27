@@ -1,0 +1,48 @@
+/*
+    Active Offers CSS
+*/
+#list_active_offers{
+    margin-top:20px;
+}
+#list_active_offers ul li{
+    cursor: pointer;
+    transition: all .4s;
+}
+#list_active_offers ul li:hover{
+    background-color: #444;
+    color: #fff
+}
+
+.activeoffers-section-title{
+    text-align: center;
+    font-size: 14pt;
+    padding:10px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.active-toggle-title{
+    font-size: 14pt;
+    padding:5px;
+}
+#active-toggle{
+    padding:5px 0px;
+    margin-left:0px;
+    margin-right:0px;
+    background-color: #cfc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.selected_offer{
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.active_data_row{
+    padding: 0 0;
+    margin: 2px 0;
+    color: #666;
+}
+
+.active_data_row div{
+    vertical-align: middle;
+}

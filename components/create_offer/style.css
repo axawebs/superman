@@ -1,0 +1,91 @@
+/*
+    Create New Common CSS
+*/
+#create_button_row{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+#create_button_row button{
+    border: solid 2px #ccc;
+}
+
+#create-add-images .slick-center {
+    transform: scale(1.1);
+}
+.slider-container .alert.alert-secondary{
+    padding: 0 0 0 0;
+}
+
+
+#create_filldata{
+    padding-top:20px;
+}
+.daily_offer_title{
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+#create_filldata_data .filldata-input {
+    padding: 0;
+}
+
+#create_filldata_data .option-group{
+    margin-bottom: 5px;;
+}
+#create_filldata_data .option-group label{
+    font-weight: bold !important;
+}
+.create_data_additem_stations, 
+.create_data_additem_btn,
+.create_data_additem_additions
+{
+    border:solid 2px #ccc;
+}
+
+
+
+.filldata_image_container{
+    position: relative;
+    margin:10px;
+    height: 192px;
+    width:180px;
+    border-radius: 4px;
+    background-color: #eee;
+    overflow:hidden;
+    border: solid 2px #ccc;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#image_offer_title{
+    position: relative;
+    padding: 20px;
+    z-index: 9999;
+    background-color: #eee;
+}
+
+.filldata_image_image{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    width: calc(100% - 20px);
+    z-index: 998;
+}
+
+
+/*
+    Fill data
+*/
+#list_filldata_titles li{
+    transition: all .3s;
+    cursor: pointer;
+}
+#list_filldata_titles li:hover{
+    background-color:#444;
+    color: #fff;    
+}
+#list_filldata{
+    margin-top:20px
+}

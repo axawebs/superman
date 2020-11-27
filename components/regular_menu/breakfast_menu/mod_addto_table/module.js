@@ -31,7 +31,7 @@ $('#btn_createinrow_item').click(function(){
             <i class="fa fa fa-eye"></i>
           </button>
           <button type="button" class="btn btn-success">
-            <i class="fa fa-check"></i>
+            Save
           </button>
           <button type="button" class="btn btn-danger">
             <i class="fa fa-times"></i>
