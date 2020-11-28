@@ -1,1 +1,1 @@
- load_sub_component('uon','uon');
+ load_sub_component('uon','list_offers');

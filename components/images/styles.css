@@ -210,40 +210,41 @@ ul#suggest_items li .select_suggest:hover{
         color: #fff;
         cursor: pointer;
     }
-    .station_selection .td1 .selected{
+    
+    .station_selection .td1 .selected, .stcolor_td1{
         background-color: rebeccapurple;
         color: #fff;
     }
 
-    .station_selection .td2 .selected{
+    .station_selection .td2 .selected, .stcolor_td2{
         background-color: olivedrab;
         color: #fff;
     }
 
-    .station_selection .td3 .selected{
+    .station_selection .td3 .selected, .stcolor_td3{
         background-color: royalblue;
         color: #fff;
     }
-    .station_selection .td4 .selected{
+    .station_selection .td4 .selected, .stcolor_td4{
         background-color: teal;
         color: #fff;
     }
-    .station_selection .td5 .selected{
+    .station_selection .td5 .selected, .stcolor_td5{
         background-color: #444;
         color: #fff;
     }
 
-    .station_selection .td6 .selected{
+    .station_selection .td6 .selected, .stcolor_td6{
         background-color: darkorchid;
         color: #fff;
     }
 
-    .station_selection .td7 .selected{
+    .station_selection .td7 .selected, .stcolor_td7{
         background-color: darkgreen;
         color: #fff;
     }
 
-    .station_selection .td8 .selected{
+    .station_selection .td8 .selected, .stcolor_td8{
         background-color: darkred;
         color: #fff;
     }

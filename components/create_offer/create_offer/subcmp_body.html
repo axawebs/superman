@@ -8,11 +8,11 @@
 <div class="container" id="create_button_row">
   <div class="row">
     <div class="col-sm-12 text-left" id="menu_add_row">
-      <button type="button" id=""   class="btn btn-secondary">
+      <button type="button" id="btn_createoffer_create"   class="btn btn-secondary">
         Create
       </button>
 
-      <button type="button" id="btn_addtorow_additions" class="btn btn-light" >
+      <button type="button" id="btn_createoffer_edit" class="btn btn-light" >
         Edit
       </button>
 
@@ -27,12 +27,12 @@
 
 <div class="container" id="create_filldata">
   <div class="row">
-    <div class="col-sm-3 text-left" id="create_filldata_title">
+    <div class="col-sm-2 text-left" id="create_filldata_title">
       <div class="daily_offer_title text-center">Daily Offer 1 <br><span id="alternative_name"></span></div>
     </div>
 
 
-    <div class="col-sm-6 text-left" id="create_filldata_data">
+    <div class="col-sm-7 text-left" id="create_filldata_data">
       <div class="option-group row">
         <label class="col-sm-4">
           SKU
@@ -72,10 +72,16 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" value="2"/>
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" value="Hot Chili Chicken Pizza"/>
+            <div class="col-sm-4 create_data_additem_stations">
+              <div class="create_itemstation stcolor_td1">1a</div>
+              <div class="create_itemstation stcolor_td1">1b</div>
+              <div class="create_itemstation stcolor_td2">2a</div>
+              <div class="create_itemstation stcolor_td3">3c</div>
+              <div class="create_itemstation stcolor_td3">3d</div>
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -85,10 +91,25 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
+          </div>
+        </div>
+      </div>
+      <div class="option-group row">
+        <label class="label col-sm-4">
+          Add Item 1
+        </label>
+        <div class="col-sm-8">
+          <div class="row">
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -98,10 +119,11 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -111,10 +133,11 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -124,10 +147,11 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -137,10 +161,11 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -150,10 +175,11 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
@@ -163,39 +189,45 @@
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
+
       <div class="option-group row">
         <label class="label col-sm-4">
           Add Item 9
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
-      </div>
+      </div> 
       <div class="option-group row">
         <label class="label col-sm-4">
           Add Item 10
         </label>
         <div class="col-sm-8">
           <div class="row">
-            <input class="col-sm-4 form-control create_data_additem_item" placeholder="Add Item" />
-            <div class="col-sm-4 create_data_additem_stations"></div>
-            <input class="col-sm-2 form-control create_data_additem_item" placeholder="Qty" />
-            <button class="col-sm-2 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A <i class="fa fa-plus"></i></button>
+            <input class="col-sm-1 form-control create_data_additem_qty" placeholder="Qty" />
+            <input class="col-sm-6 form-control create_data_additem_item" placeholder="Add Item" />
+            <div class="col-sm-4 create_data_additem_stations">
+            </div>
+            <button class="col-sm-1 create_data_additem_additions btn btn-light" data-toggle="modal" data-target="#modal_additions_content">A+</button>
           </div>
         </div>
       </div>
+      
+
 
       
     </div>

@@ -246,3 +246,32 @@
 .additions_class.free_item .addrow_price *{
     display: none;
 }
+
+#select_additions .additions_class{
+    transition: all .4s;
+    font-size: 14pt;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#select_additions .additions_class i, #select_additions .additions_class input{
+    display: inline-block;
+}
+
+#select_additions .additions_class:hover{
+    background-color: #444;
+    color: #fff;
+}
+#select_additions .additions_class.selected{
+    background-color: #444;
+    color: #fff;
+}
+    #select_additions .additions_class .fa-check{
+        display: none;
+    }
+    #select_additions .additions_class.selected .fa-check{
+        display: inline-block;        
+    }
+    #select_additions .additions_class.selected .fa-times{
+        display: none;        
+    }

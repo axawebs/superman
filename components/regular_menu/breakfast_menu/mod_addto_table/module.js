@@ -3,7 +3,7 @@ $('#additions').select2({
     closeOnBlur: true,
 });
 
-load_module('modal_additions','regular_menu/additions/mod_add_additions');
+load_module('modal_additions','regular_menu/breakfast_menu/mod_select_additions');
 
 $('#btn_createinrow_item').click(function(){
 

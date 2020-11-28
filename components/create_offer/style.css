@@ -68,12 +68,22 @@
 
 .filldata_image_image{
     position: absolute;
-    bottom: 40px;
-    left: 10px;
-    width: calc(100% - 20px);
+    top: 0px;
+    left: 0px;
+    width: 100%;
     z-index: 998;
 }
-
+.create_data_additem_stations, .create_data_additem_qty, .create_data_additem_additions{
+    padding: 0 0;
+    text-align: center !important;
+}
+.create_itemstation{
+    margin-top:4px;
+    width: 25px;
+    border-radius: 3px;
+    padding:2px 4px;
+    display: inline-block;
+}
 
 /*
     Fill data
@@ -89,4 +99,6 @@
 #list_filldata{
     margin-top:20px
 }
+
+
 

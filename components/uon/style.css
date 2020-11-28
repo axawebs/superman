@@ -54,8 +54,11 @@
 
 #image_uon{
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
     padding: 5px;
     font-size: 1.4em;
     background-color: #ffc107;
@@ -79,4 +82,8 @@
 
 .bordered_nav>button{
     border: solid 2px #ccc;
+}
+
+.val_global_btn{
+    align-items: right;
 }

@@ -45,3 +45,9 @@
 .active_data_row div{
     vertical-align: middle;
 }
+
+.active_data_row .col-sm-5{
+    padding: 0 0;
+    color: #000;
+    font-weight: 600;
+}

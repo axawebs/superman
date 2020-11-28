@@ -42,7 +42,7 @@ $('#btn_addtorow_image').click(function(){
 $('#create_itemimage .carousel-inner').slick({
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 7,
+      slidesToShow: 11,
       responsive: [
         {
           breakpoint: 768,
