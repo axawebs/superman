@@ -46,3 +46,37 @@
 .active_data_row div{
     vertical-align: middle;
 }
+
+
+/*
+    UON
+*/ 
+
+#image_uon{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.4em;
+    background-color: #ffc107;
+}
+.activeuon_item{
+    display: inline-block;
+}
+.activeuon_item.val_uon{
+    width: 70%;
+    text-align:left;
+}
+.activeuon_item.val_global_btn{
+    text-align:right;
+}
+
+.list-group-item.selected{
+    background-color: #444;
+    color:#fff;
+}
+
+
+.bordered_nav>button{
+    border: solid 2px #ccc;
+}

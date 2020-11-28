@@ -11,7 +11,7 @@ function  subcmp_on_load() {
 /**
  * Sub component navigation from a subcomponent itself
  */
-$('.appbody_nav button').click(function(e) {
+$('.appbody_nav button').unbind('click').click(function(e) {
     e.stopPropagation();
     const subcmp_target = $(this).attr('subcmp_target');
     const subcmp_parentcmp = $(this).attr('subcmp_parentcmp');
@@ -19,16 +19,13 @@ $('.appbody_nav button').click(function(e) {
         && typeof subcmp_parentcmp !== typeof undefined && subcmp_parentcmp !== false){
         load_sub_component(subcmp_parentcmp, subcmp_target);
     }
-});
 
-
-$('.subcmp_nav button').click(function () {
-    $('.subcmp_nav button').removeClass('btn-primary');
-    $('.subcmp_nav button').addClass('btn-light');
+    $('.appbody_nav button').removeClass('btn-primary');
+    $('.appbody_nav button').addClass('btn-light');
     $(this)
         .removeClass('btn-light')
         .addClass('btn-primary');
- });
+});
  
 
 /**

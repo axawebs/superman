@@ -2,7 +2,7 @@
  * Header Section Navigation (Between Subcomponents)
  */
 //Common Nav
-$('#regular_menu button').click(function(e) {
+$('#regular_menu button').unbind('click').click(function(e) {
     e.stopPropagation();
     const subcmp_target = $(this).attr('subcmp_target');
     const subcmp_parentcmp = $(this).attr('subcmp_parentcmp');
@@ -16,8 +16,9 @@ $('#regular_menu button').click(function(e) {
     $(this).removeClass('btn-light'); 
 });
 
-//Regular Menu specific Nav
-$('.subcmp_nav button').click(function(e) {
+
+//Sub Component specific Nav
+$('.subcmp_nav button').unbind('click').click(function(e) {
     e.stopPropagation();
     const subcmp_target = $(this).attr('subcmp_target');
     const subcmp_parentcmp = $(this).attr('subcmp_parentcmp');
@@ -28,5 +29,5 @@ $('.subcmp_nav button').click(function(e) {
     $('.subcmp_nav .btn').removeClass('btn-secondary');
     $('.subcmp_nav .btn').addClass('btn-light');
     $(this).addClass('btn-secondary'); 
-    $(this).removeClass('btn-light'); 
+    $(this).removeClass('btn-light');
 });
